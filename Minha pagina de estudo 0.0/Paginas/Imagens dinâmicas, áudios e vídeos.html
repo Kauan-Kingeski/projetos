@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas, áudios e vídeos</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <hr>
+    <code><pre>
+&ltpicture>
+    &ltsource media="(max-width: 750px)" srcset="foto-p.png" type="image/png">
+    &ltsource media="(max-width: 1050px)" srcset="foto-m.png" type="image/png">
+    &ltimg src="foto-g.png" alt="Imagem Flexível">
+&lt/picture>
+    </pre></code>
+    <a href="../Exemplos/exemplo-imagens-flexíveis.html"><strong>Exemplo</strong></a>
+    <hr>
+    <h1>Áudios</h1>
+    <hr>
+    <pre>
+        <code>
+&ltaudio preload="metadata" controls >
+    &ltsource src="../Midia/Àudios/guanacast-33.mp3" type="audio/mpeg">
+    &ltsource src="../Midia/Àudios/guanacast-33.ogg" type="audio/ogg">
+    &ltsource src="../Midia/Àudios/guanacast-33.wav" type="audio/wav">
+    &ltp>Seu navegador não suporta áudio &lta href="../Midia/Àudios/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg">&lt/a>&lt/p>
+&lt/audio>
+        </code>
+    </pre>
+    <hr>
+    <audio src="../Midia/Àudios/poema.mp3" preload="metadata" controls></audio>
+    <hr>
+    <h1>Vídeos</h1>
+    <hr>
+    <code><pre>
+&ltvideo width="560" poster="thumb.jpg" preload="metadata" controls>
+    &ltsource src="../Midia/Vídeos/Meu-Video.mp4" type="video/mp4">
+    &ltsource src="../Midia/Vídeos/Meu-Video.webm" type="video/webm">
+    &ltsource src="../Midia/Vídeos/Meu-Video.ogv" type="video/ogg">
+&lt/video>
+    </pre></code>
+    <hr>
+    <a href="../index.html">Voltar</a>
+</body>
+</html>
